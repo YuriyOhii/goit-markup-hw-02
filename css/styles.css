@@ -1,9 +1,58 @@
 :root {
-    --primary-brand: #4D5AE5;
-    --dark: #2E2F42;
-    --subtle-text: #8E8F99;
-    --success: #31D0AA;
-    --text: #434455;
-    --accent: #E7E9FC;
-    --light: #F4F4FD; 
+    --primary-brand-color: #4D5AE5;
+    --dark-color: #2E2F42;
+    --subtle-text-color: #8E8F99;
+    --success-color: #31D0AA;
+    --text-color: #434455;
+    --accent-color: #E7E9FC;
+    --light-color: #F4F4FD; 
+    --main-bkg-color: #ffffff;
+}
+body {
+    color: var(--text-color);
+    background-color: var(--main-bkg-color);
+}
+/* Main navigation */
+.main-nav a {
+    color: var(--dark-color);
+}
+.main-nav .logo,
+.footer .logo {
+    color: var(--primary-brand-color);
+}
+.head-contacts .link {
+    color: var(--text-color);
+}
+/* Hero */
+.hero {
+    background-color: var(--dark-color);
+    color: var(--main-bkg-color);
+}
+/* Sections */
+h2, h3 {
+    color: var(--dark-color);
+}
+.team {
+    background-color: var(--light-color);
+}
+/* Footer */
+.footer {
+    background-color: var(--dark-color);
+    color: var(--accent-color);
+}
+.footer .link {
+    color: var(--accent-color);
+}
+/* Buttons */
+.order {
+    background-color: var(--primary-brand-color);
+    color: var(--main-bkg-color);
+}
+.filtr {
+    background-color: var(--accent-color);
+    color: var(--primary-brand-color);
+}
+.filtr:hover, .filtr:focus {
+    background-color: var(--primary-brand-color);
+    color: var(--main-bkg-color);
 }
