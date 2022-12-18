@@ -5,25 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title lang="uk">Студія</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!--Header is one for all pages
     It containes the main nav-->
     <header>
       <nav class="main-nav">
-        <a href="./index.html" class="link"
-          ><span class="logo">Web</span>Studio</a
+        <a href="./index.html" class="link logo"
+          ><span class="accent">Web</span>Studio</a
         >
-        <ul>
+        <ul class="list">
           <li>
-            <a href="./index.html" class="link">Studio</a>
+            <a href="./index.html" class="link current">Studio</a>
           </li>
           <li>
             <a href="./portfolio.html" class="link">Portfolio</a>
@@ -33,7 +33,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="head-contacts">
+      <ul class="head-contacts list">
         <li>
           <a href="mailto:info@devstudio.com" class="link"
             >info@devstudio.com</a
@@ -47,14 +47,14 @@
     <main>
       <!--Hero-->
       <section class="hero">
-        <h1>Effective Solutions for Your Business</h1>
+        <h1 class="title">Effective Solutions for Your Business</h1>
         <button type="button" class="buttons order">Order Service</button>
       </section>
       <!--Our philosophy-->
-      <section>
+      <section class="features">
         <!-- The hedline shouldn't be on the site -->
         <h2>Our features</h2>
-        <ul>
+        <ul class="list">
           <li>
             <h3>Strategy</h3>
             <p>
@@ -86,9 +86,9 @@
         </ul>
       </section>
       <!--What are we doing-->
-      <section>
+      <section class="doing">
         <h2>What Are We Doing</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/studio/monitor.jpg"
@@ -116,9 +116,9 @@
         </ul>
       </section>
       <!--Our team-->
-      <section class="team">
+      <section class="team doing">
         <h2>Our Team</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/studio/markguerrero.jpg"
@@ -164,8 +164,8 @@
     </main>
     <!--Footer with Logo-->
     <footer class="footer">
-      <a href="./index.html" class="link"
-        ><span class="logo">Web</span>Studio</a
+      <a href="./index.html" class="link logo"
+        ><span class="accent">Web</span>Studio</a
       >
       <p>
         Increase the flow of customers and sales for your business with digital
