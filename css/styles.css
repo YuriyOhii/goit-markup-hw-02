@@ -11,7 +11,7 @@
 body {
   color: var(--text-color);
   background-color: var(--main-bkg-color);
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -22,7 +22,11 @@ body {
   color: var(--dark-color);
   font-weight: 600;
 }
-.link.current {
+.main-nav .link:hover,
+.main-nav .link:focus {
+  color: inherit;
+}
+.main-nav .link.current {
   color: var(--primary-brand-color);
 }
 .head-contacts .link:hover,
@@ -34,7 +38,7 @@ body {
   color: var(--primary-brand-color);
 }
 .link.logo {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.33;
@@ -85,17 +89,24 @@ body {
 .buttons {
   cursor: pointer;
   font-family: inherit;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.04em;
+  border: none;
 }
 .order {
   background-color: var(--primary-brand-color);
   color: var(--main-bkg-color);
   line-height: 1.19;
 }
+.order:hover,
+.order:focus {
+  background-color: #404BBF;
+}
 .filtr {
   background-color: var(--accent-color);
   color: var(--primary-brand-color);
+  line-height: 1.5;
 }
 .filtr:hover,
 .filtr:focus {
@@ -111,3 +122,15 @@ body {
 .list {
   list-style: none;
 }
+/* hidden elements */
+.visually-hidden {
+  position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
